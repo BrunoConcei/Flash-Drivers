@@ -35,7 +35,7 @@
 	As the names imply, these functions are the hooks to a GPIO driver specific to the MCU being used. The functions must initialize a pin on single port as either an input or an output, and set the level. The documentation for the functions describe their behaviour and should be referenced when redefining them.
 
 	@section FLASH_DEVICE Flash Device Selected 
-	@details While the SPI layer bit-banged driver is built to cover the full range of Adesto SPI flash products, the Adesto layer is meant to be general purpose within a given family. Almost all features are declared/defined. As such, some functionality may not be supported on a device within a certain family. To differentiate between devices in the general Adesto layer, conditional compilation 'locks' and 'unlocks' the opcodes and related functions. Before using the driver a user must specify the flash device being used in user_config.h with @ref PARTNO, a list of which can be seen within the comments of that file. (EX: '#define PARTNO AT45DB041E').
+	@details While the SPI layer bit-banged driver is built to cover the full range of Adesto SPI flash products, the Adesto layer is meant to be general purpose within a given family. Almost all features are declared/defined. As such, some functionality may not be supported on a device within a certain family. To differentiate between devices in the general Adesto layer, conditional compilation 'locks' and 'unlocks' the opcodes and related functions. Before using the driver a user must specify the flash device being used in user_config.h with @ref PARTNO, a list of which can be seen within the comments of that file. (EX: '\#define PARTNO AT45DB041E').
 	
 	@section USER_CONFIGURATION_LINKS File Links
 	@ref USER_CONFIG
